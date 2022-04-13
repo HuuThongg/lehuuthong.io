@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raydium Swap</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+    <style>
+        /* html::-webkit-scrollbar {
+            width: 40px;
+        }
+    
+        html::-webkit-scrollbar-thumb {
+            background-color: white;
+            border-top-left-radius: 50%;
+            border-top-right-radius: 50%;
+        }
+    
+        html::-webkit-scrollbar-thumb:hover {
+            background-color: red;
+        }
+    
+        html::-webkit-scrollbar-track {
+            background-color: white;
+        }
+    
+        html::-webkit-scrollbar-track:hover {
+            background-color: rgb(45, 22, 148);
+        } */
+    </style>
+</head>
+<body>
+    <nav class="grid-container">
+        <!-- ===========NAVBAR========== -->
+        <div class="navbar">
+            <div class="left-navbar">
+                <div class="logo-name">
+                    <a href="#"><img src="./images/logo-with-text.svg" alt=""></a>
+                </div>
+
+                
+            </div>
+            
+            <div class="right-navbar">
+                <div class="notification">
+                    <svg class="noti" fill="none"  stroke-width="2" 
+                        stroke="currentColor" >
+                        <path class="inside-noti"stroke-linecap="round" stroke-linejoin="round"
+                            d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9">
+                        </path>
+                    </svg>
+                </div>
+                <button class="button-right-navbar">
+                    <div class="inside-button-right-navbar">
+                        <div class=""><img src="./images/msic-wallet.svg" alt="msic-wallet" class=""></div>
+                        <div class="connect-wallet">Connect Wallet</div>
+                        
+                    </div>
+                </button>
+                <!-- menu button to show sidebar -->
+                <button id="menu-btn"><i class="uil uil-bars"></i></button>
+            </div>
+        </div>
+        <!-- =========== LEFT ========== -->
+        <div class="left-page">
+            <div class="top-sidebar" >
+                <ul class="sidebar-list">
+                    <li class="sidebar-list-item">
+                        <a href="#" class="sidebar-link">
+                           
+                            
+                            <div class="sidebar-box-icon">
+                                <img src="/images/entry-icon-trade.svg" alt="entry-icon-trade" class="sidebar-icon">
+                            </div>
+                            <div class="name">Trading</div>
+                            
+                            
+                            
+                            
+                            <div class="weired-button-box">
+                                <svg class="weried-button"  fill="none" stroke-width="2" stroke="currentColor"
+                                    aria-hidden="true" class="h-4 w-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" 
+                                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                </svg>
+                            </div>
+                        </a>
+                
+                
+                    </li>
+                </ul>
+                <ul class="sidebar-list">
+                    <li class="sidebar-list-item active">
+                        <a href="#" class="sidebar-link">
+                            <div class="sidebar-box-icon">
+                                <img src="/images/entry-icon-trade.svg" alt="entry-icon-trade" class="sidebar-icon">
+                            </div>
+                            <div class="name">Swap</div>
+                        </a>
+                        
+                
+                    </li>
+                </ul>
+                <ul class="sidebar-list">
+                    <li class="sidebar-list-item">
+                        <a href="#" class="sidebar-link">
+                            <div class="sidebar-box-icon">
+                                <img src="./images/entry-icon-liquidity.svg" alt="entry-icon-trade" class="sidebar-icon">
+                            </div>
+                            <div class="name">Liquidity</div>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="sidebar-list">
+                    <li class="sidebar-list-item">
+                        <a href="#" class="sidebar-link">
+                            <div class="sidebar-box-icon">
+                                <img src="./images/entry-icon-pools.svg" alt="entry-icon-trade" class="sidebar-icon">
+                            </div>
+                            <div class="name">Pools</div>
+                        </a>
+                
+                
+                    </li>
+                </ul>
+                <ul class="sidebar-list">
+                    <li class="sidebar-list-item">
+                        <a href="#" class="sidebar-link">
+                            <div class="sidebar-box-icon">
+                                <img src="./images/entry-icon-farms.svg" alt="entry-icon-trade" class="sidebar-icon">
+                            </div>
+                            <div class="name">Farms</div>
+                        </a>
+                
+                
+                    </li>
+                </ul>
+                <ul class="sidebar-list">
+                    <li class="sidebar-list-item">
+                        <a href="#" class="sidebar-link">
+                            <div class="sidebar-box-icon">
+                                <img src="./images/entry-icon-staking.svg" alt="entry-icon-trade" class="sidebar-icon">
+                            </div>
+                            <div class="name">Staking</div>
+                        </a>             
+                    </li>
+                </ul>
+                <ul class="sidebar-list">
+                    <li class="sidebar-list-item">
+                        <a href="#" class="sidebar-link">
+                            <div class="sidebar-box-icon">
+                                <img src="./images/entry-icon-acceleraytor.svg" alt="entry-icon-trade" class="sidebar-icon">
+                            </div>
+                            <div class="name">AcceleRaytor</div>
+                            <div class="weired-button-box-2">
+                                <svg class="weried-button-2" fill="none" stroke-width="2" stroke="currentColor" aria-hidden="true" class="h-4 w-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                </svg>
+                            </div>
+                        </a>
+                
+                
+                    </li>
+                </ul>
+                <ul class="sidebar-list">
+                    <li class="sidebar-list-item">
+                        <a href="#" class="sidebar-link">
+                            <div class="sidebar-box-icon">
+                                <img src="./images/entry-icon-dropzone.svg" alt="entry-icon-trade" class="sidebar-icon">
+                            </div>
+                            <div class="name">Dropzone</div>
+                            <div class="weired-button-box-3">
+                                <svg class="weried-button-3" fill="none" stroke-width="2" stroke="currentColor" aria-hidden="true" class="h-4 w-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="sidebar-list">
+                    <li class="sidebar-list-item">
+                        <a href="#" class="sidebar-link">
+                            <div class="sidebar-box-icon">
+                                <img src="./images/entry-icon-nft.svg" alt="entry-icon-trade" class="sidebar-icon">
+                            </div>
+                            <div class="name">NFT</div>
+                            <div class="weired-button-box-4">
+                                <svg class="weried-button-4" fill="none" stroke-width="2" stroke="currentColor" aria-hidden="true"
+                                    class="h-4 w-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- ============= BOTTOM SIDEBAR -->
+            <div class="bottom-sidebar">
+                <ul class="bottom-sidebar-list">
+                    <li class="bottom-sidebar-list-item">
+                        <a href="#"></a>
+                            <div class="circle"></div>
+                            <div class="name rpc">RPC(Trition)</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke-width="2" stroke="currentColor"
+                                class="bottom-sidebar-box-icon arrow-r" aria-hidden="true" class="h-4 w-4 text-[#ACE3E6]">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    
+                    
+                </ul>
+                <ul class="bottom-sidebar-list">
+                    <li class="bottom-sidebar-list-item">
+                        <a href="#" >
+                            <div class="bottom-sidebar-box-icon">
+                                <img src="/images/msic-settings.svg" alt="entry-icon-trade" class="sidebar-icon">
+                            </div>
+                            <div class="name">Settings</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke-width="2" stroke="currentColor"
+                                class="bottom-sidebar-box-icon arrow-s" aria-hidden="true" class="h-4 w-4 text-[#ACE3E6]">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="bottom-sidebar-list">
+                    <li class="bottom-sidebar-list-item">
+                        <a href="#">
+                            <div class="bottom-sidebar-box-icon">
+                                <img src="/images/msic-community.svg" alt="entry-icon-trade" class="sidebar-icon">
+                            </div>
+                            <div class="name">Community</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke-width="2" stroke="currentColor"
+                                class="bottom-sidebar-box-icon arrow" aria-hidden="true" class="h-4 w-4 text-[#ACE3E6]">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="bottom-sidebar-list">
+                    <li class="bottom-sidebar-list-item">
+                        <a href="#">
+                            <div class="bottom-sidebar-box-icon">
+                                <img src="/images/msic-docs.svg" alt="entry-icon-trade" class="sidebar-icon">
+                            </div>
+                            <div class="name">Docs</div>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="bottom-sidebar-list">
+                    <li class="bottom-sidebar-list-item">
+                        <a href="#">
+                            <div class="bottom-sidebar-box-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                    aria-hidden="true" class="h-4 w-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="name">Raydium V1</div>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="bottom-sidebar-list">
+                    <li class="bottom-sidebar-list-item">
+                        <a href="#">
+                            <div class="bottom-sidebar-box-icon">
+                                <img src="/images/misc-feedback.svg" alt="entry-icon-trade" class="sidebar-icon">
+                            </div>
+                            <div class="name">Feedback</div>
+                        </a>
+                    </li>
+                </ul>
+                
+            </div>
+            <div class="bottom-footer">
+                <div class="footer">
+                    current:2.3.2
+                    Lastes:2.3.2
+                </div>
+            </div>
+           
+        </div>
+        <!-- =========== RIGHT ========== -->
+        <div class="right-page">
+            <!-- <div class="box-main"></div> -->
+            <div class="main">
+                <div class="row-title">
+                    <div class="swap-liquidity">
+                        <div class="swap">Swap</div>
+                        <div class="liquidity">Liquidity</div>
+                    </div> 
+                </div>
+                <div class="sol-ray">
+                    <div class="sol">
+                        <div class="top-title">
+                            <div>From</div>
+                            <div>Balance:(wallet not connected)</div>
+                        </div>
+                        <div class="something">
+                            <div class="coin-logo">
+                                <div class="circle-logo">
+                                    <img class="sol-logo" src="./images/sol.png" alt="Sol-image">
+                                </div>
+                                
+                                <h3 class="sol-text">SOL</h3>
+                                
+                                    <svg class="arrow-down-inside" xmlns="http://www.w3.org/2000/svg" fill="none"  stroke-width="2" stroke="currentColor"
+                                        aria-hidden="true" class="h-3 w-3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+                                    </svg>
+                                
+                                
+                            </div>
+                            
+                            <div class="max-half">
+                                <button class="max">Max</button>
+                                <button class="half">Half</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="convert">
+                        <div class="circle-convert">
+                            <img class="swap-img" src="./images/msic-swap.svg" alt="" >
+                        </div>
+                        <div class="convert-right">
+                            <svg width="36" height="36" viewBox="0 0 36 36">
+                                <circle r="9" cx="50%" cy="50%" fill="transparent" style="stroke-width: 3; stroke: rgba(255, 255, 255, 0.18);">
+                                </circle>
+                                <circle id="bar" r="9" cx="50%" cy="50%" fill="transparent" stroke-dasharray="56.548667764616276"
+                                    stroke-dashoffset="37.69911184307752"
+                                    style="stroke-width: 3; stroke: rgba(146, 225, 255, 0.85); transform: rotate(-90deg); transform-origin: center center; stroke-linecap: round; transition: all 200ms ease 0s;">
+                                </circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <!-- ================== TO Balance -->
+                    <div class="sol">
+                        <div class="top-title">
+                            <div>To</div>
+                            <div>Balance:(wallet not connected)</div>
+                        </div>
+                        <div class="something">
+                            <div class="coin-logo">
+                                <div class="circle-logo">
+                                    <img class="sol-logo" src="./images/sol.png" alt="Sol-image">
+                                </div>
+                    
+                                <h3 class="sol-text">ADA</h3>
+                    
+                                <svg class="arrow-down-inside" xmlns="http://www.w3.org/2000/svg" fill="none" stroke-width="2"
+                                    stroke="currentColor" aria-hidden="true" class="h-3 w-3">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                    
+                    
+                            </div>
+                    
+                            <div class="max-half">
+                                <button class="max">Max</button>
+                                <button class="half">Half</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ======== Connect Wallet Button ============ -->
+                    <button class="connect-wallet-1">Connect Wallet</button>
+
+                </div>
+
+                <!-- <div class="wrap-chart">
+                    <div class="coin-chart">
+                        <img src="./images/sol.png" alt="">
+                        <div>SOL</div>
+                    </div>
+                    <div class="price">
+                        <div>Price</div>
+                        <div class="dollar-price">
+                            $115.72
+                        </div>
+                    </div>
+                    <div class="time">
+                        <div>24H%</div>
+                        <div>-10.62%</div>
+                    </div>
+                    <div class="chart">
+                        <svg class="ml-10 w-36 mobile:w-full h-12 mobile:col-span-full mobile:m-0 mobile:mt-4 flex-shrink-0"
+                            viewBox="0 0 2000 1000" preserveAspectRatio="none">
+                            <defs>
+                                <filter id="k-line-glow-negative">
+                                    <feFlood result="flood" flood-color="#DA2EEF" flood-opacity=".8"></feFlood>
+                                    <feComposite in="flood" result="mask" in2="SourceGraphic" operator="in"></feComposite>
+                                    <feMorphology in="mask" result="dilated" operator="dilate" radius="3"></feMorphology>
+                                    <feGaussianBlur in="dilated" result="blurred" stdDeviation="8"></feGaussianBlur>
+                                    <feMerge>
+                                        <feMergeNode in="blurred"></feMergeNode>
+                                        <feMergeNode in="SourceGraphic"></feMergeNode>
+                                    </feMerge>
+                                </filter>
+                            </defs>
+                            <g filter="url(#k-line-glow-negative)">
+                                 <polyline>   vector-effect="non-scaling-stroke"
+                                    points="0,0 6.920415224913495,20.05698881989864 13.84083044982699,40.067794304080124 20.761245674740483,78.39146052220708 27.68166089965398,94.29382429895473 34.602076124567475,101.20932620937313 41.522491349480966,100.91010586684821 48.44290657439446,150.0645314095172 55.36332179930796,142.84178820577046 62.28373702422145,124.86109703678675 69.20415224913495,126.79669446766842 76.12456747404845,171.40484654948565 83.04498269896193,204.91971984573203 89.96539792387544,200.49705061177778 96.88581314878893,194.34684538641926 103.80622837370241,220.71201425134169 110.72664359861592,292.7800550581195 117.6470588235294,402.9802296122943 124.5674740484429,502.62726655189226 131.4878892733564,467.0268112712089 138.4083044982699,372.3259695181905 145.32871972318338,350.68176961817994 152.2491349480969,346.7733974070437 159.16955017301038,328.1387126268428 166.08996539792386,323.42020211967156 173.01038062283735,306.31307495422095 179.9307958477509,323.32004837746763 186.85121107266437,315.74971175384974 193.77162629757785,302.47450676167836 200.69204152249134,314.9886658140264 207.61245674740482,290.9696180803811 214.53287197231836,287.3998054413816 221.45328719723184,305.32814454047224 228.37370242214533,303.60864899140364 235.2941176470588,312.58722070131086 242.21453287197232,313.3321463322742 249.1349480968858,314.37219256877387 256.0553633217993,317.8123112811959 262.9757785467128,316.5340402588274 269.8961937716263,277.3650315994222 276.8166089965398,283.25590630333477 283.7370242214533,275.12167243878275 290.65743944636677,258.77975361774577 297.5778546712803,238.33943522691087 304.4982698961938,254.2171568501495 311.4186851211073,246.22659322931858 318.33910034602076,247.0296487828178 325.25951557093424,261.2967966212204 332.1799307958477,278.3521447707875 339.1003460207612,291.08482146418214 346.0207612456747,294.21672197002795 352.94117647058823,308.513387696542 359.8615916955018,366.338842773994 366.78200692041526,368.88947662894856 373.70242214532874,370.17743145109984 380.6228373702422,384.4280258748298 387.5432525951557,381.81169311022444 394.4636678200692,353.42531264775477 401.3840830449827,349.05317394391074 408.30449826989616,343.468219051377 415.22491349480964,364.33849672587354 422.1453287197232,383.9755217045853 429.0657439446367,389.20427257434454 435.9861591695502,405.5859108268753 442.9065743944637,393.461545015758 449.8269896193772,363.05721115471454 456.74740484429066,329.6910953836254 463.66782006920414,324.3804504383536 470.5882352941176,330.37020027735247 477.5086505190311,311.8855492166564 484.42906574394465,304.89982386333975 491.34948096885813,290.60613972963733 498.2698961937716,288.68513605191816 505.1903114186851,279.8752740065903 512.1107266435986,278.81332142366415 519.0311418685121,264.4248371981074 525.9515570934255,246.23331718288318 532.8719723183391,210.46872971334932 539.7923875432526,215.57589312117628 546.7128027681662,218.1115134936566 553.6332179930796,212.47349853395116 560.5536332179931,213.19296820692585 567.4740484429066,218.0046815037613 574.3944636678201,217.83578058625073 581.3148788927335,188.0434432450741 588.2352941176471,195.23014607036686 595.1557093425606,208.00768229908084 602.076124567474,246.19558417913657 608.9965397923876,248.85291877008444 615.916955017301,241.44088604770516 622.8373702422145,240.57512762232275 629.757785467128,241.60957062920772 636.6782006920415,234.00172301764886 643.5986159169549,227.24899740863466 650.5190311418685,210.03864486966827 657.439446366782,199.8043308476627 664.3598615916954,192.2406873176269 671.280276816609,186.59441570754143 678.2006920415224,165.60789940964824 685.121107266436,157.48404881909235 692.0415224913494,152.1289860541592 698.961937716263,157.97729786023282 705.8823529411765,177.94057528151063 712.80276816609,186.49865966418514 719.7231833910035,190.8753982002906 726.643598615917,232.49798841573082 733.5640138408305,234.11582242689934 740.4844290657439,224.45211278107075 747.4048442906575,217.77597475360585 754.3252595155709,237.83819243061515 761.2456747404844,257.4011376574198 768.1660899653979,263.8948133797051 775.0865051903114,276.6702922722873 782.006920415225,306.9980908588797 788.9273356401384,309.13212888224837 795.8477508650519,285.2866492522417 802.7681660899653,287.83906948595387 809.6885813148789,298.45819814549566 816.6089965397923,305.7436196129121 823.5294117647059,304.92644503149234 830.4498269896193,284.2339566824753 837.3702422145328,279.7295120342334 844.2906574394464,282.6488204058082 851.2110726643599,294.31875869810057 858.1314878892734,317.89794934772226 865.0519031141869,328.46290937406644 871.9723183391004,350.5861165379551 878.8927335640138,373.24262775483686 885.8131487889274,367.3851958816654 892.7335640138408,351.7156937452507 899.6539792387543,351.76753328141723 906.5743944636679,357.8018552699415 913.4948096885813,383.29887007707913 920.4152249134949,371.0426621584508 927.3356401384083,357.3505474262514 934.2560553633218,390.643792238807 941.1764705882352,421.1932275921193 948.0968858131488,458.94270546506226 955.0173010380622,449.90619051569894 961.9377162629758,401.6744446520152 968.8581314878893,406.1845811915245 975.7785467128027,435.95222028645145 982.6989619377163,457.8989764341902 989.6193771626297,459.4758074160045 996.5397923875432,455.9989535799061 1003.4602076124568,472.25194791284565 1010.3806228373702,493.17750418814154 1017.3010380622837,534.8619568062718 1024.2214532871972,602.6521756711678 1031.1418685121107,612.1022277737562 1038.0622837370242,597.5653147190603 1044.9826989619378,607.1938610714648 1051.903114186851,596.6322101504103 1058.8235294117646,569.3602889737327 1065.7439446366782,565.5901634074633 1072.6643598615917,508.99809470559364 1079.5847750865053,500.8389783760862 1086.5051903114186,518.7278767063607 1093.4256055363323,527.988652681489 1100.3460207612457,552.3185956853162 1107.2664359861592,572.2508232050775 1114.1868512110727,517.7009379339878 1121.1072664359863,468.828454993068 1128.0276816608996,490.304970128779 1134.9480968858131,496.0336576695383 1141.8685121107267,513.5351633193353 1148.7889273356402,488.9119520139308 1155.7093425605535,489.41778454425184 1162.629757785467,491.8805350958249 1169.5501730103806,496.4810541778057 1176.4705882352941,492.33016369601347 1183.3910034602075,475.32764449039587 1190.3114186851212,457.33041932777735 1197.2318339100345,471.7293717505528 1204.152249134948,484.1715141182205 1211.0726643598614,475.03913678993365 1217.9930795847752,488.3460359362718 1224.9134948096885,515.3327453700105 1231.833910034602,579.0374443698557 1238.7543252595158,631.3631421156822 1245.674740484429,691.0995125886983 1252.5951557093426,689.5467367483792 1259.515570934256,693.6003015282449 1266.4359861591697,818.5700539320966 1273.356401384083,799.4454920975488 1280.2768166089966,794.6572073333728 1287.1972318339099,787.820326473103 1294.1176470588236,779.7580849402997 1301.038062283737,783.6140186708118 1307.9584775086505,762.0048950706279 1314.878892733564,784.8868791260982 1321.7993079584776,779.43280747053 1328.719723183391,782.6004779681818 1335.6401384083044,785.8451622108157 1342.560553633218,821.9722746266692 1349.4809688581315,835.2334179815464 1356.4013840830448,862.5666321014718 1363.3217993079586,878.9654900583911 1370.242214532872,905.9433896226092 1377.1626297577855,899.326426233171 1384.0830449826988,932.1708301837315 1391.0034602076125,918.5098882240515 1397.923875432526,885.7969096258755 1404.8442906574394,849.7314275515052 1411.764705882353,823.7673280159747 1418.6851211072665,835.4229678533734 1425.60553633218,821.6241192019543 1432.5259515570933,812.5993942124531 1439.446366782007,813.3021154919215 1446.3667820069204,848.7742912886653 1453.287197231834,909.3282145354723 1460.2076124567473,920.4135485520281 1467.128027681661,915.0216100165981 1474.0484429065743,911.8445299527048 1480.9688581314879,957.946304135663 1487.8892733564014,940.3865141763418 1494.809688581315,931.271709255961 1501.7301038062283,925.2829499426084 1508.6505190311418,936.8724413652347 1515.5709342560554,992.7834517061987 1522.491349480969,1000 1529.4117647058822,960.5935911134602 1536.3321799307957,950.9351174301077 1543.2525951557095,910.7170370926613 1550.1730103806228,899.9498697911674 1557.0934256055364,898.9773487930496 1564.01384083045,873.7184000672986 1570.9342560553634,847.3313015476806 1577.8546712802768,817.1011459303855 1584.7750865051903,810.8489835793118 1591.6955017301038,786.1300230438927 1598.6159169550174,761.8391456244843 1605.5363321799307,826.5863978621793 1612.4567474048442,915.7856810341093 1619.3771626297578,933.1049615960002 1626.2975778546713,934.2963257734363 1633.2179930795846,925.5867286004036 1640.1384083044984,824.4431117578608 1647.0588235294117,821.7945744702629 1653.9792387543253,797.5972822888427 1660.8996539792386,806.4676914920389 1667.8200692041523,750.591020220642 1674.7404844290656,706.6162239462094 1681.6608996539792,738.763114557101 1688.5813148788927,729.2695479037325 1695.5017301038063,742.373489961889 1702.4221453287198,775.2437535908118 1709.3425605536331,799.2796390285569 1716.262975778547,807.4198091543908 1723.1833910034602,806.7990569224363 1730.1038062283737,768.7623328002543 1737.024221453287,741.7545524528298 1743.9446366782008,718.0924426525513 1750.8650519031141,725.690534505294 1757.7854671280277,730.4681135567064 1764.7058823529412,700.6784737696025 1771.6262975778548,720.234942950367 1778.546712802768,767.5885469665501 1785.4671280276816,782.4915429014968 1792.3875432525952,761.031348262277 1799.3079584775087,744.8465900680254 1806.228373702422,768.4881960811485 1813.1487889273358,773.9994432175122 1820.069204152249,777.6397920475781 1826.9896193771626,735.1572486204733 1833.910034602076,748.1586535093653 1840.8304498269897,763.2860532803481 1847.7508650519032,763.8196181198298 1854.6712802768166,730.1178660149841 1861.59169550173,749.8492912318092 1868.5121107266436,739.2371328038182 1875.4325259515572,728.5284980793034 1882.3529411764705,737.4941708891151 1889.2733564013843,781.7336582596425 1896.1937716262976,783.180825609087 1903.1141868512111,802.6247646200792 1910.0346020761244,788.700573961757 1916.9550173010382,797.0292337936883 1923.8754325259515,845.3459691627656 1930.795847750865,837.0282936594041 1937.7162629757786,826.9618981309909 1944.6366782006921,838.3071710345566 1951.5570934256054,882.1212759171844 1958.477508650519,894.6956553840971 1965.3979238754325,931.9654037674349 1972.318339100346,925.9734564680182 1979.2387543252594,925.0693987634454 1986.159169550173,959.0687690682644 1993.0795847750865,952.090702272593"
+                                    stroke="#DA2EEF" fill="none"></polyline>
+                            </g>
+                        </svg>
+                    </div>
+                </div> -->
+            </div>
+            
+        </div>
+
+    </nav>
+    <script src="main.js"></script>
+</body>
+</html>
